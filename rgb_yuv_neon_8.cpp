@@ -260,8 +260,8 @@ int main()
     Mat yuv;
 
     auto t1 = high_resolution_clock::now();  
-    rgb2yuv_8(bgr, yuv);
-    //rgb2yuv_8_col(bgr, yuv);                
+    //rgb2yuv_8(bgr, yuv);
+    rgb2yuv_8_col(bgr, yuv);                
     auto t2 = high_resolution_clock::now();  
     auto duration = duration_cast<microseconds>(t2 - t1).count();
     cout << "RGB2YUV conversion time: " << duration << " us" << endl;
