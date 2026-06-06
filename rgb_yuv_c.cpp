@@ -9,6 +9,7 @@ using namespace std;
 using namespace cv;
 using namespace std::chrono;
 
+
 void rgb2yuv_scalar(const Mat& bgr, Mat& yuv)
 {
     CV_Assert(bgr.type() == CV_8UC3);
